@@ -76,15 +76,6 @@ jobs:
           source venv/bin/activate
           pre-commit run --hook-stage=manual --show-diff-on-failure --all-files
 
-      # - name: mypy
-      #   run: mypy .
-
-      - name: pytest
-        # run: pytest --junitxml=junit.xml --cov --cov-report=term-missing:skip-covered --cov-report=xml
-        run: |
-          source venv/bin/activate
-          pytest
-
   poetry-speed-test:
     runs-on: ${{ matrix.os }}
     timeout-minutes: 30
@@ -112,6 +103,7 @@ jobs:
       - name: Install Poetry
         run: |
           curl -sSL https://install.python-poetry.org | python3 -
+          export PATH="/Users/runner/.local/bin:$PATH"
           poetry --version
           poetry config virtualenvs.in-project true
           poetry config virtualenvs.create false
