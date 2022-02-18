@@ -1,9 +1,8 @@
 name: Poetry lock and export
 
 on:
-  # push:
-  # branches: [main]
-  # pull_request:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 concurrency:
@@ -56,3 +55,8 @@ jobs:
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: Update poetry.lock and requirements.txt
+          title: Update poetry.lock and requirements.txt
+          body: Update poetry.lock and requirements.txt
+          branch: poetry-lock-and-export
