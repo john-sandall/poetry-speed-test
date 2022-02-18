@@ -17,6 +17,7 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.9.9"
 # Everything below here is alphabetically sorted
+pandas = "^1.4.1"
 
 [tool.poetry.dev-dependencies]
 # Everything below here is alphabetically sorted

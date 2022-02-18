@@ -34,4 +34,3 @@ tldr gcloud
 ```sh
 python -m ipykernel install --user --name poetry-speed-tests --display-name "Python (poetry-speed-tests)"
 ```
-
