@@ -114,5 +114,6 @@ jobs:
       - name: Run Poetry update
         run: |
           source venv/bin/activate
+          export PATH="/Users/runner/.local/bin:$PATH"
           rm poetry.lock
           time poetry update -vvv
