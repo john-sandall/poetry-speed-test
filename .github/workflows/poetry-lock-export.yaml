@@ -53,3 +53,6 @@ jobs:
           poetry update
           poetry lock --no-update
           poetry export -f requirements.txt --output requirements.txt
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
