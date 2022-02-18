@@ -16,9 +16,17 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.9.9"
-# Everything below here is alphabetically sorted
+# Everything below here is sorted alphabetically
 efficientnet-pytorch = "^0.7.1"
-pandas = "^1.4.1"
+facenet-pytorch = "^2.5.2"
+loguru = "^0.6.0"
+matplotlib = "^3.5.1"
+networkx = "^2.6.3"
+opencv-python = "^4.5.5"
+pandas = "^1.4.0"
+scikit-learn = "^1.0.2"
+timm = "^0.5.4"
+tqdm = "^4.62.3"
 
 [tool.poetry.dev-dependencies]
 # Everything below here is alphabetically sorted
