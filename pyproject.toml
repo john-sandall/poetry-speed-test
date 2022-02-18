@@ -17,6 +17,7 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.9.9"
 # Everything below here is alphabetically sorted
+efficientnet-pytorch = "^0.7.1"
 pandas = "^1.4.1"
 
 [tool.poetry.dev-dependencies]
